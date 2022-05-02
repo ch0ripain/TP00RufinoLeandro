@@ -27,7 +27,7 @@ public class CalculadoraController {
 		result = newCalculadora.resolvsuma();
 		model.addAttribute("resultSuma", result);
 
-		return "resultado";
+		return "resultados";
 	}
 
 	@GetMapping("/calculoResta")
@@ -40,7 +40,7 @@ public class CalculadoraController {
 		result = newCalculadora.resolvresta();
 		model.addAttribute("resultResta", result);
 
-		return "resultado";
+		return "resultados";
 	}
 
 	@GetMapping("/calculoMultiplicacion")
@@ -53,7 +53,7 @@ public class CalculadoraController {
 		result = newCalculadora.resolvmultiplicacion();
 		model.addAttribute("resultMultiplicacion", result);
 
-		return "resultado";
+		return "resultados";
 	}
 
 	@GetMapping("/calculoDivision")
@@ -66,7 +66,7 @@ public class CalculadoraController {
 		result = newCalculadora.resolvdivision();
 		model.addAttribute("resultDivision", result);
 
-		return "resultado";
+		return "resultados";
 	}
 
 	@GetMapping("/calculoPotencia")
@@ -79,7 +79,7 @@ public class CalculadoraController {
 		result = newCalculadora.resolvpotencia();
 		model.addAttribute("resultPotencia", result);
 
-		return "resultado";
+		return "resultados";
 	}
 
 	@GetMapping("/calculoRaiz")
@@ -92,6 +92,6 @@ public class CalculadoraController {
 		result = newCalculadora.resolvraiz();
 		model.addAttribute("resultRaiz", result);
 
-		return "resultado";
+		return "resultados";
 	}
 }
